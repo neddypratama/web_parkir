@@ -42,7 +42,7 @@
                                     }
                                     return $rows;
                                 }
-                                $lahan_parkir = select("SELECT * FROM lahan_parkir");
+                                $lahan_parkir = select("SELECT nama, kapasitas, jumlah_kosong, (kapasitas - jumlah_kosong) AS sisa FROM lahan_parkir ORDER BY sisa ASC");
                                 ?>
                             <?php
                                 foreach($lahan_parkir as $parkir) :

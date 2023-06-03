@@ -42,26 +42,26 @@
                         <div class="col"></div>
                         <div class="col-6">
                             <div class="row row-cols-1">
-                                <div class="col">
-                                    <div class="row row-cols-2">
-                                        <div class="col-4 text-light p-2 m-1 fw-bold">KODE LAHAN</div>
-                                        <div class="col-7 bg-light rounded-4 p-2 m-1">
+                                <div class="col mt-1">
+                                    <div class="row ">
+                                        <div class="col-4 text-light p-2 fw-bold">KODE LAHAN</div>
+                                        <div class="col-8 bg-light rounded-4 p-2">
                                             <input type="text" name="kode" value="<?php echo $row['id'] ?>" class="form-control">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="row row-cols-2">
-                                        <div class="col-4 text-light p-2 m-1 fw-bold">NAMA LAHAN</div>
-                                        <div class="col-7 bg-light rounded-4 p-2 m-1">
+                                <div class="col mt-1">
+                                    <div class="row">
+                                        <div class="col-4 text-light p-2 fw-bold">NAMA LAHAN</div>
+                                        <div class="col-8 bg-light rounded-4 p-2">
                                             <input type="text" name="nama" value="<?php echo $row['nama'] ?>" class="form-control">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="row row-cols-2">
-                                        <div class="col-4 text-light p-2 m-1 fw-bold">KAPASITAS</div>
-                                        <div class="col-7 bg-light rounded-4 p-2 m-1">
+                                <div class="col mt-1">
+                                    <div class="row">
+                                        <div class="col-4 text-light p-2 fw-bold">KAPASITAS</div>
+                                        <div class="col-8 bg-light rounded-4 p-2">
                                             <input type="number" name="kapasitas" value="<?php echo $row['kapasitas'] ?>" class="form-control">
                                         </div>
                                     </div>
