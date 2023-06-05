@@ -1,6 +1,6 @@
 <?php
 
-include 'database.php';
+include 'script/database.php';
 $id = $_GET['id'];
 
 function select($query) {
@@ -25,6 +25,6 @@ endforeach;
 $query2 = "UPDATE lahan_parkir SET jumlah_kosong = '$sisa' WHERE id = '$id'";
 
 if (mysqli_query($connect, $query2)) {
-    header('Location:input.php');
+    header('Location:parkAccess.php?id='.$id);
 }
 ?>
