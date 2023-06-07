@@ -1,5 +1,4 @@
 <?php
-    session_start();
 
     include "database.php";    
 
@@ -11,16 +10,14 @@
     $result = mysqli_query($connect, $query);
     $row = mysqli_fetch_array($result);
     $username = $row['id'];
-    if($row['status'] == "1"){
+    if($status == 1 && $email == $row['email'] && $status == $row['status']){
         header("Location:../jurusanpark.php");
-        $_SESSION["user"] = $username;
     }
-    else if($row['status'] == "2"){
-        header("Location:../crud.php");
-        $_SESSION["user"] = $username;
+    else if($status == 2 && $email == $row['email'] && $status == $row['status']){
+        header("Location:../realtime1.php");
     }
     else{
         header("Location:../login.php");
     }
-    mysqli_close($connect);
+
 ?>
