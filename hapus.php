@@ -1,6 +1,6 @@
 <?php
 
-include('database.php');
+include('script/database.php');
 
 //get id
 $id = $_GET['id'];

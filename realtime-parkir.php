@@ -1,7 +1,7 @@
 
 <?php
 
-include 'database.php';
+include 'script/database.php';
 
 function select($query) {
   global $connect;
